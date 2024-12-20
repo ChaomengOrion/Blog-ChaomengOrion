@@ -1,0 +1,122 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><title>个人ACM模板 | Chaomeng&#39;s Blog</title><meta name="author" content="ChaomengOrion"><meta name="description" content=""><meta name="keywords" content="Blog"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><link rel="icon" href="/images/avatar.jpg"><link rel="preconnect" href="https://s4.zstatic.net"><script src="https://s4.zstatic.net/ajax/libs/vue/3.5.13/vue.global.prod.min.js"></script><link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.6.0/css/all.min.css"><link rel="preconnect" href="https://fonts.googleapis.cn"><link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.cn/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap"><script>let mixins={}</script><script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=default"></script><script src="https://s4.zstatic.net/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script><script src="https://s4.zstatic.net/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script><link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/highlight.js/11.10.0/styles/github.min.css"><script src="/js/lib/highlight.js"></script><link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.css"><script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.js"></script><script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script><script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js"></script><script src="/js/lib/math.js"></script><script src="/js/lib/preview.js"></script><link rel="stylesheet" href="/css/main.css"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="/js/lib/toc.js"></script><script async src="/js/mermaid/mermaid.min.js" onload="onMermaidLoaded()"></script><script>function onMermaidLoaded(){mermaid.initialize({theme:"forest"}),console.log("Mermaid inited")}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="layout"><transition name="fade"><div id="loading" v-show="loading"><div id="loading-circle"><h2>LOADING</h2><p>加载过慢请开启缓存 浏览器默认开启</p><img src="/images/loading.gif"></div></div></transition><div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}"><nav id="desktop-menu"><a class="title" href="/"><span>CHAOMENG&#39;S BLOG</span> </a><a href="/"><i class="fa-solid fa-house fa-fw"></i> <span>&ensp;Home</span> </a><a href="/about"><i class="fa-solid fa-id-card fa-fw"></i> <span>&ensp;About</span> </a><a href="/archives"><i class="fa-solid fa-box-archive fa-fw"></i> <span>&ensp;Archives</span> </a><a href="/categories"><i class="fa-solid fa-bookmark fa-fw"></i> <span>&ensp;Categories</span> </a><a href="/tags"><i class="fa-solid fa-tags fa-fw"></i> <span>&ensp;Tags</span></a></nav><nav id="mobile-menu"><div class="title" @click="showMenuItems = !showMenuItems"><i class="fa-solid fa-bars fa-fw"></i> <span>&emsp;CHAOMENG&#39;S BLOG</span></div><transition name="slide"><div class="items" v-show="showMenuItems"><a href="/"><div class="item"><div style="min-width:20px;max-width:50px;width:10%"><i class="fa-solid fa-house fa-fw"></i></div><div style="min-width:100px;max-width:150%;width:20%">Home</div></div></a><a href="/about"><div class="item"><div style="min-width:20px;max-width:50px;width:10%"><i class="fa-solid fa-id-card fa-fw"></i></div><div style="min-width:100px;max-width:150%;width:20%">About</div></div></a><a href="/archives"><div class="item"><div style="min-width:20px;max-width:50px;width:10%"><i class="fa-solid fa-box-archive fa-fw"></i></div><div style="min-width:100px;max-width:150%;width:20%">Archives</div></div></a><a href="/categories"><div class="item"><div style="min-width:20px;max-width:50px;width:10%"><i class="fa-solid fa-bookmark fa-fw"></i></div><div style="min-width:100px;max-width:150%;width:20%">Categories</div></div></a><a href="/tags"><div class="item"><div style="min-width:20px;max-width:50px;width:10%"><i class="fa-solid fa-tags fa-fw"></i></div><div style="min-width:100px;max-width:150%;width:20%">Tags</div></div></a></div></transition></nav></div><transition name="fade"><div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div></transition><div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'"><div class="article"><div><h1>个人ACM模板</h1></div><div class="info"><span class="date"><span class="icon"><i class="fa-solid fa-calendar fa-fw"></i> </span>2024/12/10 </span><span class="category"><a href="/categories/ACM/"><span class="icon"><i class="fa-solid fa-bookmark fa-fw"></i> </span>ACM </a></span><span class="tags"><span class="icon"><i class="fa-solid fa-tags fa-fw"></i> </span><span class="tag"><a href="/tags/ACM/" style="color:#00a596">ACM </a></span><span class="tag"><a href="/tags/%E7%AE%97%E6%B3%95/" style="color:#00bcd4">算法 </a></span><span class="tag"><a href="/tags/Cpp/" style="color:#00a596">Cpp</a></span></span><br><span id="busuanzi_container_page_pv" style="color:#aaa"><i class="fa-solid fa-paperclip"></i> 本文总阅读量<span id="busuanzi_value_page_pv"></span>次</span></div><toc-component></toc-component><div class="content" v-pre id="main-content"><blockquote><p>线上赛自用模板 by ChaomengOrion</p></blockquote><span id="more"></span><ul><li><a href="#前期准备">前期准备</a><ul><li><a href="#cpp文件一键编译测试">Cpp文件一键编译测试</a></li><li><a href="#cpp模板">Cpp模板</a></li></ul></li><li><a href="#算法">算法</a><ul><li><a href="#快速幂">快速幂</a></li><li><a href="#素数筛">素数筛</a></li><li><a href="#二维差分">二维差分</a></li></ul></li><li><a href="#图论">图论</a><ul><li><a href="#最短路-dijkstra">最短路 - Dijkstra</a></li></ul></li><li><a href="#杂项">杂项</a><ul><li><a href="#unordered_map防hack">unordered_map防hack</a></li></ul></li></ul><h2><span id="前期准备">前期准备</span></h2><h3><span id="cpp文件一键编译测试">Cpp文件一键编译测试</span></h3><div class="spoiler collapsed"><div class="spoiler-title"></div><div class="spoiler-content"><p><strong>Windows</strong> - <code>build.bat</code></p><pre class="bat"><code>@echo off
+set exe=.\output\%~n1.exe
+if not exist output mkdir output
+g++ %1 -o %exe% -std=c++17 -Wall -Wextra -g3 -O2 -D_GLIBCXX_DEBUG &amp;&amp; (
+    echo [build done to %exe%]
+    %exe%
+)</code></pre></div></div><h3><span id="cpp模板">Cpp模板</span></h3><div class="spoiler collapsed"><div class="spoiler-title"></div><div class="spoiler-content"><pre class="cpp"><code>#include &lt;bits/stdc++.h&gt;
+
+using i64 = long long;
+
+#define LOG(...) std::cerr &lt;&lt; &quot;Line[&quot; &lt;&lt; __LINE__ &lt;&lt; &quot;]: &quot; &lt;&lt; __VA_ARGS__ &lt;&lt; std::endl;
+#define LOGV(_vec, _size) std::cerr &lt;&lt; #_vec &lt;&lt; &quot; = &quot; &lt;&lt; &#39;[&#39;; for (int _i = 0; _i &lt; (_size); _i++) { std::cerr &lt;&lt; (_vec)[_i]; if (_i != (_size) - 1) std::cerr &lt;&lt; &quot;, &quot;; } std::cerr &lt;&lt; &#39;]&#39; &lt;&lt; std::endl;
+
+void solve() {}
+
+int main() {
+    std::cin.tie(nullptr)-&gt;sync_with_stdio(false);
+    int t; std::cin &gt;&gt; t; while (t--) solve();
+    return 0;
+}</code></pre></div></div><h2><span id="算法">算法</span></h2><h3><span id="快速幂">快速幂</span></h3><div class="spoiler collapsed"><div class="spoiler-title"></div><div class="spoiler-content"><pre class="cpp"><code>using i64 = long long;
+i64 binpow(i64 a, i64 b)
+{
+    // a %= m;
+    i64 res = 1;
+    while (b &gt; 0) {
+        if (b &amp; 1) res = res * a; // % m;
+        a = a * a; // % m;
+        b &gt;&gt;= 1;
+    }
+    return res;
+}</code></pre></div></div><h3><span id="素数筛">素数筛</span></h3><div class="spoiler collapsed"><div class="spoiler-title"></div><div class="spoiler-content"><pre class="cpp"><code>bool isPrime(int num)
+{
+    if (num == 1) return 0;
+    if (num == 2 || num == 3) return 1;
+    if (num % 6 != 1 &amp;&amp; num % 6 != 5) return 0;
+    int tmp = sqrt(num);
+    for (int i = 5; i &lt;= tmp; i += 6)
+        if (num % i == 0 || num % (i + 2) == 0) return 0;
+    return 1;
+}</code></pre></div></div><h3><span id="二维差分">二维差分</span></h3><div class="spoiler collapsed"><div class="spoiler-title"></div><div class="spoiler-content"><pre class="cpp"><code>void best()
+{
+    int N, M; std::cin &gt;&gt; N &gt;&gt; M;
+    std::vector map(N + 1, std::vector&lt;int&gt;(N + 1, 0));
+    std::vector diff(N + 2, std::vector&lt;int&gt;(N + 2, 0));
+    for (int i = 1; i &lt;= N; i++) for (int j = 1; j &lt;= N; j++) std::cin &gt;&gt; map[i][j];
+
+    while (M--) {
+        int x1, x2, y1, y2;
+        std::cin &gt;&gt; x1 &gt;&gt; y1 &gt;&gt; x2 &gt;&gt; y2;
+        diff[x1][y1]++;
+        diff[x1][y2 + 1]--;
+        diff[x2 + 1][y1]--;
+        diff[x2 + 1][y2 + 1]++;
+    }
+//  修改
+//  ###+@@@-
+//  ###@@@@#
+//  ###-###+
+    for (int i = 1; i &lt;= N; i++)
+        for (int j = 1; j &lt;= N; j++)
+            diff[i][j] += diff[i - 1][j];
+
+    for (int i = 1; i &lt;= N; i++)
+        for (int j = 1; j &lt;= N; j++)
+            diff[i][j] += diff[i][j - 1];
+
+    for (int i = 1; i &lt;= N; i++) {
+        for (int j = 1; j &lt;= N; j++) {
+            std::cout &lt;&lt; diff[i][j] + map[i][j] &lt;&lt; &#39; &#39;;
+        }
+        std::cout &lt;&lt; &#39;\n&#39;;
+    }
+}</code></pre></div></div><h2><span id="图论">图论</span></h2><h3><span id="最短路-dijkstra">最短路 - Dijkstra</span></h3><div class="spoiler collapsed"><div class="spoiler-title"></div><div class="spoiler-content"><pre class="cpp"><code>void solve()
+{
+    int N, M, S; // 点 边 出发点
+    std::cin &gt;&gt; N &gt;&gt; M &gt;&gt; S;
+    std::vector&lt;std::vector&lt;std::pair&lt;int, int&gt;&gt;&gt; graph(N + 1);
+    for (int i = 0; i &lt; M; i++) {
+        int u, v, len;
+        std::cin &gt;&gt; u &gt;&gt; v &gt;&gt; len;
+        graph[u].emplace_back(v, len);
+        //graph[v].to.emplace_back(u, len);
+    }
+
+    std::priority_queue&lt;std::pair&lt;int, int&gt;, std::vector&lt;std::pair&lt;int, int&gt;&gt;, std::greater&lt;&gt;&gt; pq;
+    std::vector&lt;int&gt; dis(N + 1, INT_MAX);
+    dis[S] = 0;
+    pq.emplace(0, S);
+    while(!pq.empty()) {
+        auto [d, i] = pq.top();
+        pq.pop();
+        if (d != dis[i]) continue;
+
+        for (auto [nid, cost] : graph[i]) {
+            if (dis[nid] &gt; dis[i] + cost) {
+                dis[nid] = dis[i] + cost;
+                pq.emplace(dis[nid], nid);
+            }
+        }
+    }
+
+    for (int i = 1; i &lt;= N; i++) {
+        std::cout &lt;&lt; dis[i] &lt;&lt; &#39; &#39;;
+    }
+}</code></pre></div></div><h2><span id="杂项">杂项</span></h2><h3><span id="unordered_map防hack">unordered_map防hack</span></h3><div class="spoiler collapsed"><div class="spoiler-title"></div><div class="spoiler-content"><p>防止hash碰撞<br>原文链接：<a target="_blank" rel="noopener" href="https://codeforces.com/blog/entry/62393">https://codeforces.com/blog/entry/62393</a></p><pre class="cpp"><code>struct custom_hash {
+    static uint64_t splitmix64(uint64_t x) {
+        // http://xorshift.di.unimi.it/splitmix64.c
+        x += 0x9e3779b97f4a7c15;
+        x = (x ^ (x &gt;&gt; 30)) * 0xbf58476d1ce4e5b9;
+        x = (x ^ (x &gt;&gt; 27)) * 0x94d049bb133111eb;
+        return x ^ (x &gt;&gt; 31);
+    }
+
+    size_t operator()(uint64_t x) const {
+        static const uint64_t FIXED_RANDOM = chrono::steady_clock::now().time_since_epoch().count();
+        return splitmix64(x + FIXED_RANDOM);
+    }
+};
+
+// Usage:
+unordered_map&lt;long long, int, custom_hash&gt; safe_map;
+gp_hash_table&lt;long long, int, custom_hash&gt; safe_hash_table;</code></pre></div></div><link rel="stylesheet" href="/css/spoiler.css"><script src="/js/spoiler.js" async></script></div><div id="comment"><blockquote><p>本站不开放评论区，如有讨论内容请移步至<a target="_blank" rel="noopener" href="https://github.com/ChaomengOrion/chaomengorion.github.io/discussions">本站Github讨论区</a></p></blockquote></div><footer id="footer"><div id="footer-wrap"><div><i class="fa-solid fa-paperclip"></i> <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span> &emsp; <i class="fa-solid fa-circle-user"></i> <span id="busuanzi_container_site_uv">总访客数<span id="busuanzi_value_site_uv"></span>人</span></div><div>&copy; 2024 - 2024 Chaomeng&#39;s Blog <span id="footer-icon"><i class="fa-solid fa-font-awesome fa-fw"></i> </span>&commat;ChaomengOrion</div><div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp; <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a> &emsp; Adopted CC 4.0 BY-SA license</div><div><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">粤ICP备2024346855号-1</a> &emsp; <img src="/images/gongan.png" width="14" alt="公安备案图标"> <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44030002005405" rel="noreferrer" target="_blank">粤公网安备44030002005405号</a></div></div></footer></div><transition name="fade"><div id="preview" ref="preview" v-show="previewShow"><img id="preview-content" ref="previewContent"></div></transition></div><script src="/js/main.js"></script><canvas id="fireworks" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:32767"></canvas><script src="https://s4.zstatic.net/ajax/libs/animejs/3.2.1/anime.min.js"></script><script src="/js/fireworks.min.js"></script></div></body></html>
